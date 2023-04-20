@@ -17,22 +17,641 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="headerB2B">
-      <div class="headerB2B_logo"></div>
-      <form action="" class="headerB2B_form">
-        <input
-          type="text"
-          name="headerSearch"
-          id="headerSearch"
-          class="headerB2B_form-input"
-          placeholder="O que você deseja?"
-        />
-        <button type="submit"></button>
-      </form>
+      <div class="container">
+        <div class="headerB2B_logo">
+          <img src="assets/logo.png" alt="LOGO TRADEB2B" />
+        </div>
+        <form action="" class="headerB2B_form">
+          <input
+            type="text"
+            name="headerSearch"
+            id="headerSearch"
+            class="headerB2B_form-input"
+            placeholder="O que você deseja?"
+          />
+          <button type="submit" class="headerB2B_form-btn">
+            <iconify-icon
+              icon="material-symbols:search"
+              style="color: #255488"
+              width="30"
+              height="30"
+            ></iconify-icon>
+          </button>
+        </form>
+        <div class="headerB2BIcons">
+          <iconify-icon
+            class="me-2"
+            icon="iconoir:facebook"
+            style="color: white"
+            width="30"
+            height="30"
+          ></iconify-icon>
+          <iconify-icon
+            icon="ph:instagram-logo"
+            style="color: white"
+            width="30"
+            height="30"
+          ></iconify-icon>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="homeCarousel">
+        <div class="swiper homeSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-button-next">
+            <iconify-icon
+              icon="ic:round-keyboard-arrow-right"
+              style="color: #545454"
+              width="30"
+              height="30"
+            ></iconify-icon>
+          </div>
+          <div class="swiper-button-prev">
+            <iconify-icon
+              icon="ic:round-keyboard-arrow-left"
+              style="color: #545454"
+              width="30"
+              height="30"
+            ></iconify-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="trendContainer">
+        <h2 class="titleBlue">TREND NO MOMENTO</h2>
+        <div class="swiper trendSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="trendSwiper_image"
+                src="./assets/carousel-photo.png"
+                alt="IMAGEM CARD"
+              />
+              <h3 class="trendSwiper_title">NAME</h3>
+              <p class="trendSwiper_price">R$ 00,00</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="trendSwiper_image"
+                src="./assets/carousel-photo.png"
+                alt="IMAGEM CARD"
+              />
+              <h3 class="trendSwiper_title">NAME</h3>
+              <p class="trendSwiper_price">R$ 00,00</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="trendSwiper_image"
+                src="./assets/carousel-photo.png"
+                alt="IMAGEM CARD"
+              />
+              <h3 class="trendSwiper_title">NAME</h3>
+              <p class="trendSwiper_price">R$ 00,00</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="trendSwiper_image"
+                src="./assets/carousel-photo.png"
+                alt="IMAGEM CARD"
+              />
+              <h3 class="trendSwiper_title">NAME</h3>
+              <p class="trendSwiper_price">R$ 00,00</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="trendSwiper_image"
+                src="./assets/carousel-photo.png"
+                alt="IMAGEM CARD"
+              />
+              <h3 class="trendSwiper_title">NAME</h3>
+              <p class="trendSwiper_price">R$ 00,00</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="trendSwiper_image"
+                src="./assets/carousel-photo.png"
+                alt="IMAGEM CARD"
+              />
+              <h3 class="trendSwiper_title">NAME</h3>
+              <p class="trendSwiper_price">R$ 00,00</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="trendSwiper_image"
+                src="./assets/carousel-photo.png"
+                alt="IMAGEM CARD"
+              />
+              <h3 class="trendSwiper_title">NAME</h3>
+              <p class="trendSwiper_price">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <iconify-icon
+              icon="ic:round-keyboard-arrow-right"
+              style="color: #545454"
+              width="30"
+              height="30"
+            ></iconify-icon>
+          </div>
+          <div class="swiper-button-prev">
+            <iconify-icon
+              icon="ic:round-keyboard-arrow-left"
+              style="color: #545454"
+              width="30"
+              height="30"
+            ></iconify-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="highlights container">
+        <form action="" class="highlightsForm">
+          <div class="highlightsForm_field">
+            <div class="radio-label">
+              <input
+                type="radio"
+                id="caracteristica1"
+                name="caracteristicas"
+                value="caracteristica1"
+                checked
+              />
+              <label for="caracteristica1" data-text="CARACTERISTICA"></label>
+            </div>
+          </div>
+          <div class="highlightsForm_field">
+            <div class="radio-label">
+              <input
+                type="radio"
+                id="caracteristica2"
+                name="caracteristicas"
+                value="caracteristica2"
+              />
+              <label for="caracteristica2" data-text="CARACTERISTICA"></label>
+            </div>
+          </div>
+          <div class="highlightsForm_field">
+            <div class="radio-label">
+              <input
+                type="radio"
+                id="caracteristica3"
+                name="caracteristicas"
+                value="caracteristica3"
+              />
+              <label for="caracteristica3" data-text="CARACTERISTICA"></label>
+            </div>
+          </div>
+          <div class="highlightsForm_field">
+            <div class="radio-label">
+              <input
+                type="radio"
+                id="caracteristica4"
+                name="caracteristicas"
+                value="caracteristica4"
+              />
+              <label for="caracteristica4" data-text="CARACTERISTICA"></label>
+            </div>
+          </div>
+        </form>
+        <div class="highlightsCards">
+          <div class="highlightsCard">
+            <img
+              class="highlightsCard_image"
+              src="./assets/carousel-photo.png"
+              alt="IMAGEM Card"
+            />
+
+            <div class="highlightsCard_color">
+              <div class="highlightsCard_color-radio">
+                <span id="color-red">
+                  <input type="radio" id="color-red-card1" name="color-group" />
+                  <label for="color-red-card1" data-color="#ff0000"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-green">
+                  <input
+                    type="radio"
+                    id="color-green-card1"
+                    name="color-group"
+                  />
+                  <label for="color-green-card1" data-color="#00ff00"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-blue">
+                  <input
+                    type="radio"
+                    id="color-blue-card1"
+                    name="color-group"
+                  />
+                  <label for="color-blue-card1" data-color="#0000ff"></label>
+                </span>
+              </div>
+            </div>
+            <div class="size-options">
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-p-card-1" checked>
+                <label class="group_label" for="size-p-card-1">P</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-m-card-1" checked>
+                <label class="group_label" for="size-m-card-1">M</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-g-card-1" checked>
+                <label class="group_label" for="size-g-card-1">G</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-xl-card-1" checked>
+                <label class="group_label" for="size-xl-card-1">XL</label>
+              </div>
+            </div>
+
+            <div class="highlightsCard_size"></div>
+            <h3 class="highlightsCard_title">
+              Camiseta Feminina Manga Longa UV 50+ Luna Pink
+            </h3>
+            <p class="highlightsCard_price">R$ 00,00</p>
+          </div>
+          <div class="highlightsCard">
+            <img
+              class="highlightsCard_image"
+              src="./assets/carousel-photo.png"
+              alt="IMAGEM Card"
+            />
+            <div class="highlightsCard_color">
+              <div class="highlightsCard_color-radio">
+                <span id="color-red">
+                  <input type="radio" id="color-red-card2" name="color-group" />
+                  <label for="color-red-card2" data-color="#ff0000"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-green">
+                  <input
+                    type="radio"
+                    id="color-green-card2"
+                    name="color-group"
+                  />
+                  <label for="color-green-card2" data-color="#00ff00"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-blue">
+                  <input
+                    type="radio"
+                    id="color-blue-card2"
+                    name="color-group"
+                  />
+                  <label for="color-blue-card2" data-color="#0000ff"></label>
+                </span>
+              </div>
+            </div>
+            <div class="size-options">
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-p-card-2" checked>
+                <label class="group_label" for="size-p-card-2">P</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-m-card-2" checked>
+                <label class="group_label" for="size-m-card-2">M</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-g-card-2" checked>
+                <label class="group_label" for="size-g-card-2">G</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-xl-card-2" checked>
+                <label class="group_label" for="size-xl-card-2">XL</label>
+              </div>
+            </div>
+            <div class="highlightsCard_size"></div>
+            <h3 class="highlightsCard_title">
+              Camiseta Feminina Manga Longa UV 50+ Luna Pink
+            </h3>
+            <p class="highlightsCard_price">R$ 00,00</p>
+          </div>
+          <div class="highlightsCard">
+            <img
+              class="highlightsCard_image"
+              src="./assets/carousel-photo.png"
+              alt="IMAGEM Card"
+            />
+            <div class="highlightsCard_color">
+              <div class="highlightsCard_color-radio">
+                <span id="color-red">
+                  <input type="radio" id="color-red-card3" name="color-group" />
+                  <label for="color-red-card3" data-color="#ff0000"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-green">
+                  <input
+                    type="radio"
+                    id="color-green-card3"
+                    name="color-group"
+                  />
+                  <label for="color-green-card3" data-color="#00ff00"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-blue">
+                  <input
+                    type="radio"
+                    id="color-blue-card3"
+                    name="color-group"
+                  />
+                  <label for="color-blue-card3" data-color="#0000ff"></label>
+                </span>
+              </div>
+            </div>
+            <div class="size-options">
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-p-card-3" checked>
+                <label class="group_label" for="size-p-card-3">P</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-m-card-3" checked>
+                <label class="group_label" for="size-m-card-3">M</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-g-card-3" checked>
+                <label class="group_label" for="size-g-card-3">G</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-xl-card-3" checked>
+                <label class="group_label" for="size-xl-card-3">XL</label>
+              </div>
+            </div>
+            <div class="highlightsCard_size"></div>
+            <h3 class="highlightsCard_title">
+              Camiseta Feminina Manga Longa UV 50+ Luna Pink
+            </h3>
+            <p class="highlightsCard_price">R$ 00,00</p>
+          </div>
+          <div class="highlightsCard">
+            <img
+              class="highlightsCard_image"
+              src="./assets/carousel-photo.png"
+              alt="IMAGEM Card"
+            />
+            <div class="highlightsCard_color">
+              <div class="highlightsCard_color-radio">
+                <span id="color-red">
+                  <input type="radio" id="color-red-card4" name="color-group" />
+                  <label for="color-red-card4" data-color="#ff0000"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-green">
+                  <input
+                    type="radio"
+                    id="color-green-card4"
+                    name="color-group"
+                  />
+                  <label for="color-green-card4" data-color="#00ff00"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-blue">
+                  <input
+                    type="radio"
+                    id="color-blue-card4"
+                    name="color-group"
+                  />
+                  <label for="color-blue-card4" data-color="#0000ff"></label>
+                </span>
+              </div>
+            </div>
+            <div class="size-options">
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-p-card-4" checked>
+                <label class="group_label" for="size-p-card-4">P</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-m-card-4" checked>
+                <label class="group_label" for="size-m-card-4">M</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-g-card-4" checked>
+                <label class="group_label" for="size-g-card-4">G</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-xl-card-4" checked>
+                <label class="group_label" for="size-xl-card-4">XL</label>
+              </div>
+            </div>
+            <div class="highlightsCard_size"></div>
+            <h3 class="highlightsCard_title">
+              Camiseta Feminina Manga Longa UV 50+ Luna Pink
+            </h3>
+            <p class="highlightsCard_price">R$ 00,00</p>
+          </div>
+          <div class="highlightsCard">
+            <img
+              class="highlightsCard_image"
+              src="./assets/carousel-photo.png"
+              alt="IMAGEM Card"
+            />
+            <div class="highlightsCard_color">
+              <div class="highlightsCard_color-radio">
+                <span id="color-red">
+                  <input type="radio" id="color-red-card5" name="color-group" />
+                  <label for="color-red-card5" data-color="#ff0000"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-green">
+                  <input
+                    type="radio"
+                    id="color-green-card5"
+                    name="color-group"
+                  />
+                  <label for="color-green-card5" data-color="#00ff00"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-blue">
+                  <input
+                    type="radio"
+                    id="color-blue-card5"
+                    name="color-group"
+                  />
+                  <label for="color-blue-card5" data-color="#0000ff"></label>
+                </span>
+              </div>
+            </div>
+            <div class="size-options">
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-p-card-5" checked>
+                <label class="group_label" for="size-p-card-5">P</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-m-card-5" checked>
+                <label class="group_label" for="size-m-card-5">M</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-g-card-5" checked>
+                <label class="group_label" for="size-g-card-5">G</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-xl-card-5" checked>
+                <label class="group_label" for="size-xl-card-5">XL</label>
+              </div>
+            </div>
+            <div class="highlightsCard_size"></div>
+            <h3 class="highlightsCard_title">
+              Camiseta Feminina Manga Longa UV 50+ Luna Pink
+            </h3>
+            <p class="highlightsCard_price">R$ 00,00</p>
+          </div>
+          <div class="highlightsCard">
+            <img
+              class="highlightsCard_image"
+              src="./assets/carousel-photo.png"
+              alt="IMAGEM Card"
+            />
+            <div class="highlightsCard_color">
+              <div class="highlightsCard_color-radio">
+                <span id="color-red">
+                  <input type="radio" id="color-red-card6" name="color-group" />
+                  <label for="color-red-card6" data-color="#ff0000"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-green">
+                  <input
+                    type="radio"
+                    id="color-green-card6"
+                    name="color-group"
+                  />
+                  <label for="color-green-card6" data-color="#00ff00"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-blue">
+                  <input
+                    type="radio"
+                    id="color-blue-card6"
+                    name="color-group"
+                  />
+                  <label for="color-blue-card6" data-color="#0000ff"></label>
+                </span>
+              </div>
+            </div>
+            <div class="size-options">
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-p-card-6" checked>
+                <label class="group_label" for="size-p-card-6">P</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-m-card-6" checked>
+                <label class="group_label" for="size-m-card-6">M</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-g-card-6" checked>
+                <label class="group_label" for="size-g-card-6">G</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-xl-card-6" checked>
+                <label class="group_label" for="size-xl-card-6">XL</label>
+              </div>
+            </div>
+            <div class="highlightsCard_size"></div>
+            <h3 class="highlightsCard_title">
+              Camiseta Feminina Manga Longa UV 50+ Luna Pink
+            </h3>
+            <p class="highlightsCard_price">R$ 00,00</p>
+          </div>
+          <div class="highlightsCard">
+            <img
+              class="highlightsCard_image"
+              src="./assets/carousel-photo.png"
+              alt="IMAGEM Card"
+            />
+            <div class="highlightsCard_color">
+              <div class="highlightsCard_color-radio">
+                <span id="color-red">
+                  <input type="radio" id="color-red-card7" name="color-group" />
+                  <label for="color-red-card7" data-color="#ff0000"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-green">
+                  <input
+                    type="radio"
+                    id="color-green-card7"
+                    name="color-group"
+                  />
+                  <label for="color-green-card7" data-color="#00ff00"></label>
+                </span>
+              </div>
+              <div class="highlightsCard_color-radio">
+                <span id="color-blue">
+                  <input
+                    type="radio"
+                    id="color-blue-card7"
+                    name="color-group"
+                    color="blue"
+                  />
+                  <label for="color-blue-card7" data-color="#0000ff"></label>
+                </span>
+              </div>
+            </div>
+            <div class="size-options">
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-p-card-7" checked>
+                <label class="group_label" for="size-p-card-7">P</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-m-card-7" checked>
+                <label class="group_label" for="size-m-card-7">M</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-g-card-7" checked>
+                <label class="group_label" for="size-g-card-7">G</label>
+              </div>
+              <div class="group">
+                <input class="group_input" type="radio" name="sizeOptions" id="size-xl-card-7" checked>
+                <label class="group_label" for="size-xl-card-7">XL</label>
+              </div>
+            </div>
+            <div class="highlightsCard_size"></div>
+            <h3 class="highlightsCard_title">
+              Camiseta Feminina Manga Longa UV 50+ Luna Pink
+            </h3>
+            <p class="highlightsCard_price">R$ 00,00</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -44,5 +663,52 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".homeSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".trendSwiper", {
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          "@2.00": {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --blue: #255488;
+}
+
+.titleBlue {
+  color: var(--blue);
+  text-align: center;
+  font-weight: bold;
+  font-weight: 800;
+}
+
+.headerB2B {
+  background-color: var(--blue);
+  width: 100%;
+  height: 60px;
+}
+
+.headerB2B_logo img {
+  height: 60px;
+}
+
+.headerB2B .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.headerB2B_form {
+  width: 50%;
+  position: relative;
+}
+
+.headerB2B_form-input {
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+
+.headerB2B_form-input::placeholder {
+  color: var(--blue);
+}
+
+.headerB2B_form-btn {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.headerB2B_form-btn iconify-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper {
+  height: 100%;
+}
+
+.homeSwiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/carousel-photo.png");
+  background-position: center 10%;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.homeSwiper .swiper-button-prev {
+  top: auto;
+  bottom: 30px;
+  left: auto !important;
+  right: 100px;
+  background-color: #d9d9d9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.homeSwiper .swiper-button-next {
+  top: auto;
+  bottom: 30px;
+  left: auto !important;
+  right: 50px;
+  background-color: #d9d9d9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.trendContainer {
+  margin-top: 50px;
+}
+
+.trendSwiper {
+  margin-top: 100px;
+}
+
+.trendSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.trendSwiper_image {
+  max-width: 400px;
+  padding: 0 10px;
+}
+
+.trendSwiper_title {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.trendSwiper_price {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.trendSwiper .swiper-button-prev {
+  top: auto;
+  bottom: 50%;
+  transform: translateY(-50%);
+  left: 10px !important;
+  right: auto;
+  background-color: #d9d9d9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.trendSwiper .swiper-button-next {
+  top: auto;
+  bottom: 50%;
+  left: auto !important;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #d9d9d9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.highlightsForm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 170px));
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 30px;
+}
+
+.radio-label {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.radio-label input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radio-label label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  color: #255488;
+  font-weight: bold;
+}
+
+.radio-label label:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 50px;
+  border-radius: 75px;
+  border: 2px solid var(--blue);
+  background-color: #fff;
+}
+
+.radio-label input[type="radio"]:checked + label:before {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.radio-label label:after {
+  content: attr(data-text);
+  display: inline-block;
+  position: relative;
+}
+
+.radio-label input[type="radio"]:checked + label:after {
+  color: #fff;
+}
+
+.highlightsCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+  justify-content: center;
+}
+
+.highlightsCard {
+  max-width: 400px;
+  padding: 10px;
+}
+
+.highlightsCard_image {
+  width: 100%;
+}
+
+.highlightsCard_color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-options {
+  margin-bottom: 20px;
+}
+
+.color-options h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.highlightsCard_color-radio {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.highlightsCard_color-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.highlightsCard_color-radio label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.highlightsCard_color-radio label:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.highlightsCard_color-radio input[type="radio"]:checked + label:before {
+  background-color: #555;
+  border-color: #555;
+}
+
+.highlightsCard_color-radio label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+#color-red input + label:after {
+  background-color: #ff0000;
+}
+
+#color-green input + label:after {
+  background-color: #00ff00;
+}
+
+#color-blue input + label:after {
+  background-color: #0000ff;
+}
+
+.highlightsCard_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.highlightsCard_price {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.size-options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.group {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.group_input {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.group_label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  line-height: 24px;
+  text-align: center;
+  color: var(--blue)
+}
+
+.group_input::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -2.5px;
+  margin-top: -2.5px;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.group_input:checked::before {
+  opacity: 1;
+}
+
+.group_input:focus::before {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.group_input:checked + .group_label {
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .headerB2B_logo img {
+    height: 50px;
+    margin: auto 0;
+  }
+  .headerB2B_form {
+    display: none;
+  }
+
+  .headerB2BIcons {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 20;
+  }
+}
+@media screen and (max-width: 250px) {
+  .headerB2B .container {
+    justify-content: center;
+  }
+
+  .headerB2B_logo img {
+    height: 40px;
+    margin: auto 0;
+  }
+
+  .headerB2B iconify-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .homeCarousel {
+    height: calc(100vh - 500px);
+  }
+  .trendContainer,
+  .trendSwiper,
+  .highlights,
+  .highlightsCards {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .homeCarousel {
+    height: calc(100vh - 400px);
+  }
+  .trendContainer,
+  .trendSwiper,
+  .highlightsCards,
+  .highlights {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .trendContainer {
+    margin-top: 30px;
+  }
+
+  .trendSwiper {
+    margin-top: 30px;
+  }
+  .highlightsCards {
+    margin-top: 80px;
+  }
+  .highlights {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .trendContainer {
+    margin-top: 50px;
+  }
+
+  .trendSwiper {
+    margin-top: 100px;
+  }
+  .highlights {
+    margin-top: 80px;
+  }
+}
