@@ -295,8 +295,8 @@
 }
 
 .highlightsCard_color-radio input[type="radio"]:checked + label:before {
-  background-color: #555;
-  border-color: #555;
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .highlightsCard_color-radio label:after {
@@ -338,7 +338,7 @@
   font-weight: 800;
 }
 
-.size-options{
+.size-options {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,7 +368,7 @@
   transform: translate(-50%, -50%);
   line-height: 24px;
   text-align: center;
-  color: var(--blue)
+  color: var(--blue);
 }
 
 .group_input::before {
@@ -399,7 +399,6 @@
 .group_input:checked + .group_label {
   color: #fff;
 }
-
 
 @media screen and (max-width: 768px) {
   .headerB2B_logo img {
